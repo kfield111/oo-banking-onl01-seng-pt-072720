@@ -16,7 +16,7 @@ end
 
 def execute_transaction
   if self.valid?
-    sender.deposit += amount
+    sender.deposit(amount)
     receiver.balance -= amount
   end
 end
