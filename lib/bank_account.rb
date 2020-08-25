@@ -10,4 +10,9 @@ class BankAccount
     @status = status
   end
 
+
+  def deposit(amount)
+    @balance += amount
+  end
+
 end
